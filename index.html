@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link href="favicon.io"
+      rel="icon"
+      type="image/x-icon">
+    <link href="global.css" 
+      rel="stylesheet" 
+      type="text/css"/>
+    <link href="modules/imageCarousel.css" 
+      rel="stylesheet" 
+      type="text/css"/>
+    <link href="modules/quoteViewer.css" 
+      rel="stylesheet" 
+      type="text/css"/>
+    <link href="style.css" 
+      rel="stylesheet" 
+      type="text/css"/>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <!-- body -->
+  <body>
+
+    <!-- navbar -->
+    <div id="navbar">
+      <div class="navbarItems">
+        <div class="menu unselectable" onclick="eventMenu()" onmouseover="eventMenu()">
+          <img src="assets/menu.png" height="80">
+        </div>
+
+        <a class="home unselectable" href="">JOHNZHENG</a>
+        <a class="mission unselectable" href="mission">MISSION</a>
+        <a class="about unselectable" href="about">ABOUT</a>
+        <a class="contact unselectable" href="contact">CONTACT</a>
+      </div>
+    </div>
+    <!-- menubar -->
+    <div id="menubar">
+      <div class="menubarItems">
+        <a class="mission unselectable" href="mission">MISSION</a>
+        <a class="about unselectable" href="about">ABOUT</a>
+        <a class="contact unselectable" href="contact">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- terrible and fake inspirational jargon -->
+    <div id="banner">
+      <label class="badInspiration unselectable">Think of Something.</label>
+      <a class="bannerButton unselectable" href="parallax">Something</a>
+    </div>
+
+    <!-- image carousel -->
+    <div id="imageViewer">
+      <div id="viewMain" class="viewMain">
+        <img id="imageMainFader" class="imageMainFader imageMain" src="images/2.jpg">
+        <img id="imageMain" class="imageMain" src="images/1.jpg">
+      </div>
+      <div id="viewMinor" class="viewMinor"></div>
+    </div>
+
+    <!-- quote viewer -->
+    <a id="quoteViewer">
+      <img class="quoteViewerImage" onclick="showQuote()">
+      <div class="quoteViewerMain" onclick="showQuote()">
+        <label class="quoteContent"></label>
+        <label class="quoteAuthor"></label>
+      </div>
+    </a>
+
+    <!-- footer -->
+    <footer>
+      <div class="divider"></div>
+      <div class="footerContainer">
+        <div class="home unselectable">JOHNZHENG</div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
+
